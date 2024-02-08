@@ -11,10 +11,10 @@ public class FactorialTest {
 
 	@Test
 	void factorialTest() {
-		Assertions.assertEquals("3628800 = 10!", this.reverseFactorials.reverseFactorial(3628800));
-		Assertions.assertEquals("479001600 = 12!", this.reverseFactorials.reverseFactorial(479001600));
-		Assertions.assertEquals("6 = 3!", this.reverseFactorials.reverseFactorial(6));
-		Assertions.assertEquals("18 = NONE", this.reverseFactorials.reverseFactorial(18));
+		Assertions.assertEquals("10!", this.reverseFactorials.reverseFactorial(3628800));
+		Assertions.assertEquals("12!", this.reverseFactorials.reverseFactorial(479001600));
+		Assertions.assertEquals("3!", this.reverseFactorials.reverseFactorial(6));
+		Assertions.assertEquals("NONE", this.reverseFactorials.reverseFactorial(18));
 	}
 
 }

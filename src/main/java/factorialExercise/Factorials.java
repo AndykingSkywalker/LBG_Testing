@@ -9,15 +9,16 @@ public class Factorials {
 		System.out.println(Factorials.reverseFactorial(18));
 	}
 
-	public static String reverseFactorial(int num) {
-		int number = num;
-		int divisor = 2;
-
-		while (number % divisor == 0) {
-			number /= divisor;
-			divisor++;
+	public static String reverseFactorial(double num) {
+		int i = 1;
+		while (num > 1) {
+			num /= ++i;
 		}
-		return String.format("%d = ", num) + ((divisor % number == 0) ? String.format("%d!", divisor - 1) : "NONE");
+		if (num == 1) {
+			return i + "!";
+		}
+		return "NONE";
+
 	}
 
 }
