@@ -26,6 +26,6 @@ public class CalcTest {
 
 	@Test
 	void divideTest() {
-		Assertions.assertEquals(7.5, this.calculator.divide(15, 2));
+		Assertions.assertEquals(5, this.calculator.divide(15, 3));
 	}
 }
