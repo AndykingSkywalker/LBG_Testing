@@ -17,13 +17,13 @@ public class DoggoCompetition {
 
 		for (int i = 1; i <= 100; i++) {
 			if (i != num) {
-				if (i == 1) {
+				if (i % 10 == 1 && i != 11) {
 					places.add(i + "st");
 				}
-				if (i == 2) {
+				if (i % 10 == 2 && i == 2) {
 					places.add(i + "nd");
 				}
-				if (i == 3) {
+				if (i % 10 == 3 && i == 3) {
 					places.add(i + "rd");
 				} else if (i > 3) {
 					places.add(i + "th");
